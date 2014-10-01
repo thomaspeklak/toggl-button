@@ -35,6 +35,7 @@
     "*://*.basecamp.com/*",
     "*://*.atlassian.net/*",
     "*://*.jira.com/*",
+    "*://jira.diamonddogs.cc/*",
     "*://*.producteev.com/*",
     "*://*.bitbucket.org/*",
     "*://*.sifterapp.com/*",
@@ -74,6 +75,7 @@
         "*://*.basecamp.com/*",
         "*://*.atlassian.net/*",
         "*://*.jira.com/*",
+        "*://jira.diamonddogs.cc/*",
         "*://*.producteev.com/*",
         "*://*.sifterapp.com/*",
         "*://docs.google.com/*",
@@ -159,6 +161,10 @@
     },
     {
       "matches": ["*://*.jira.com/*"],
+      "js": ["scripts/content/jira.js"]
+    },
+    {
+      "matches": ["*://jira.diamonddogs.cc/*"],
       "js": ["scripts/content/jira.js"]
     },
     {

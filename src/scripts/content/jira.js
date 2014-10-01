@@ -3,27 +3,27 @@
 
 'use strict';
 
-togglbutton.render('#ghx-detail-issue:not(.toggl)', {observe: true}, function (elem) {
-  var link, description,
-    container = createTag('div', 'ghx-toggl-button'),
-    titleElem = $('[data-field-id="summary"]', elem),
-    numElem = $('.ghx-fieldname-issuekey a'),
-    projectElem = $('.ghx-project', elem);
+//togglbutton.render('#ghx-detail-issue:not(.toggl)', {observe: true}, function (elem) {
+  //var link, description,
+    //container = createTag('div', 'ghx-toggl-button'),
+    //titleElem = $('[data-field-id="summary"]', elem),
+    //numElem = $('.ghx-fieldname-issuekey a'),
+    //projectElem = $('.ghx-project', elem);
 
-  description = titleElem.innerText;
-  if (numElem !== null) {
-    description = numElem.innerText + " " + description;
-  }
+  //description = titleElem.innerText;
+  //if (numElem !== null) {
+    //description = numElem.innerText + " " + description;
+  //}
 
-  link = togglbutton.createTimerLink({
-    className: 'jira',
-    description: description,
-    projectName: projectElem && projectElem.innerText
-  });
+  //link = togglbutton.createTimerLink({
+    //className: 'jira',
+    //description: description,
+    //projectName: projectElem && projectElem.innerText
+  //});
 
-  container.appendChild(link);
-  $('#ghx-detail-head').appendChild(container);
-});
+  //container.appendChild(link);
+  //$('#ghx-detail-head').appendChild(container);
+//});
 
 togglbutton.render('.issue-header-content:not(.toggl)', {observe: true}, function (elem) {
   var link, description, ul, li,
