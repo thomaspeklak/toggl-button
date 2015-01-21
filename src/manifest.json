@@ -1,7 +1,7 @@
 {
   "name": "Toggl Button",
   "short_name": "Toggl Button",
-  "version": "0.4.2",
+  "version": "0.5.7",
   "manifest_version": 2,
   "description": "Add Official Toggl Online Timer to Popular Web Tools",
   "background": {
@@ -20,7 +20,6 @@
   "permissions": [
     "notifications",
     "idle",
-    "tabs",
     "*://*.toggl.com/*",
     "*://*.teamweek.com/*",
     "*://*.pivotaltracker.com/*",
@@ -51,7 +50,9 @@
     "*://trac-hacks.org/*",
     "*://*.trac.wordpress.org/*",
     "*://bugs.jquery.com/*",
-    "*://*.wunderlist.com/*"
+    "*://*.wunderlist.com/*",
+    "*://*.teamwork.com/*",
+    "*://*.teamworkpm.net/*"
   ],
   "icons": {
     "16": "images/icon-16.png",
@@ -90,7 +91,11 @@
         "*://trac-hacks.org/*",
         "*://*.trac.wordpress.org/*",
         "*://bugs.jquery.com/*",
-        "*://*.wunderlist.com/*"
+        "*://*.wunderlist.com/*",
+        "*://*.toodledo.com/*",
+        "*://*.teamwork.com/*",
+        "*://*.teamworkpm.net/*",
+        "*://mail.google.com/*"
       ],
       "css": ["styles/style.css"],
       "js": ["scripts/common.js"]
@@ -205,6 +210,13 @@
     },
     {
       "matches": [
+        "*://*.teamwork.com/*",
+        "*://*.teamworkpm.net/*"
+      ],
+      "js": ["scripts/content/teamworkpm.js"]
+    },    
+    {
+      "matches": [
         "*://trac.edgewall.org/*",
         "*://trac-hacks.org/*",
         "*://*.trac.wordpress.org/*",
@@ -215,6 +227,14 @@
     {
       "matches": ["https://*.wunderlist.com/*"],
       "js": ["scripts/content/wunderlist.js"]
+    },
+    {
+      "matches": ["*://*.toodledo.com/*"],
+      "js": ["scripts/content/toodledo.js"]
+    },
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": ["scripts/content/google-mail.js"]
     }
   ]
 }
